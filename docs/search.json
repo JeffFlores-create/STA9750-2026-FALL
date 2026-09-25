@@ -4,13 +4,97 @@
     "href": "index.html",
     "title": "MINI_PROJECT",
     "section": "",
-    "text": "Hi! My name is Jeffrey Flores, a grad student at Baruch pursuing an M.S. in Statistics. Recently I graduated with a bachelors in Statistics & Quantitative Modeling  whith a minor in Communication Studies. I;m intertested in leveraging to solve problem within the sports industry. This website will serve as a portfolio to showcase my course projects in STA9750."
+    "text": "Hi! My name is Jeffrey Flores, a grad student at Baruch pursuing an M.S. in Statistics. Recently I graduated with a bachelors in Statistics & Quantitative Modeling  with a minor in Communication Studies. I’m intertested in leveraging my skills within the sports industry and hope to one day contribute to a teams’ success through data. This website will serve as a portfolio to showcase my course projects in STA9750."
   },
   {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
     "title": "MINI_PROJECT",
     "section": "",
-    "text": "Hi! My name is Jeffrey Flores, a grad student at Baruch pursuing an M.S. in Statistics. Recently I graduated with a bachelors in Statistics & Quantitative Modeling  whith a minor in Communication Studies. I;m intertested in leveraging to solve problem within the sports industry. This website will serve as a portfolio to showcase my course projects in STA9750."
+    "text": "Hi! My name is Jeffrey Flores, a grad student at Baruch pursuing an M.S. in Statistics. Recently I graduated with a bachelors in Statistics & Quantitative Modeling  with a minor in Communication Studies. I’m intertested in leveraging my skills within the sports industry and hope to one day contribute to a teams’ success through data. This website will serve as a portfolio to showcase my course projects in STA9750."
+  },
+  {
+    "objectID": "mp01.html",
+    "href": "mp01.html",
+    "title": "Mini-Project Placeholder",
+    "section": "",
+    "text": "This is a placeholder for STA9750 Mini-Project 1. Check back soon for more!"
+  },
+  {
+    "objectID": "mp02.html",
+    "href": "mp02.html",
+    "title": "Mini-Project Placeholder",
+    "section": "",
+    "text": "This is a placeholder for STA9750 Mini-Project 2. Check back soon for more!"
+  },
+  {
+    "objectID": "mp03.html",
+    "href": "mp03.html",
+    "title": "Mini-Project Placeholder",
+    "section": "",
+    "text": "This is a placeholder for STA9750 Mini-Project 3. Check back soon for more!"
+  },
+  {
+    "objectID": "mp04.html",
+    "href": "mp04.html",
+    "title": "Mini-Project Placeholder",
+    "section": "",
+    "text": "This is a placeholder for STA9750 Mini-Project 4. Check back soon for more!"
+  },
+  {
+    "objectID": "Lab_Inclass_2.html",
+    "href": "Lab_Inclass_2.html",
+    "title": "Lab_Inclass",
+    "section": "",
+    "text": "if(!require(\"tidyverse\")) install.packages(\"tidyverse\")\n\nLoading required package: tidyverse\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.4.4     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(tidyverse)\ntxhousing |&gt; \n  filter(city==\"Houston\") |&gt; \n  group_by(year) |&gt; \n  summarize(sales=sum(sales)) |&gt; \n  ggplot(aes(x=year, y=sales)) + \n    geom_line() + \n    ggtitle(\"Annual Houses Sold in Houston, TX\")"
+  },
+  {
+    "objectID": "Lab_Inclass_2.html#the-fall-off",
+    "href": "Lab_Inclass_2.html#the-fall-off",
+    "title": "Lab_Inclass",
+    "section": "",
+    "text": "if(!require(\"tidyverse\")) install.packages(\"tidyverse\")\n\nLoading required package: tidyverse\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.4.4     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(tidyverse)\ntxhousing |&gt; \n  filter(city==\"Houston\") |&gt; \n  group_by(year) |&gt; \n  summarize(sales=sum(sales)) |&gt; \n  ggplot(aes(x=year, y=sales)) + \n    geom_line() + \n    ggtitle(\"Annual Houses Sold in Houston, TX\")"
+  },
+  {
+    "objectID": "Lab_Inclass_2.html#the-rise-of-it",
+    "href": "Lab_Inclass_2.html#the-rise-of-it",
+    "title": "Lab_Inclass",
+    "section": "The Rise of it",
+    "text": "The Rise of it\n\nif(!require(\"tidyverse\")) install.packages(\"tidyverse\")\nlibrary(tidyverse)\ntxhousing |&gt; \n   filter(city==\"Houston\") |&gt; \n    group_by(month) |&gt; \n    summarize(avg_price=sum(volume) / sum(sales)) |&gt; \n    mutate(month=factor(month.abb[month], \n                 levels=month.abb, ordered=TRUE)) |&gt;\n    ggplot(aes(x=month, y=avg_price)) + \n    geom_bar(stat=\"identity\") + \n    ggtitle(\"Average Price of Houses Sold in Texas by Month\") + \n    xlab(\"Month\") + \n    ylab(\"Average Sale Price\") + \n    scale_y_continuous(labels = scales::dollar)"
+  },
+  {
+    "objectID": "Lab_Inclass_2.html#the-return",
+    "href": "Lab_Inclass_2.html#the-return",
+    "title": "Lab_Inclass",
+    "section": "The return",
+    "text": "The return\nIn 2013 things were Awful\n\nif(!require(\"tidyverse\")) install.packages(\"tidyverse\")\nlibrary(tidyverse)\ntxhousing |&gt; filter(year==2015) |&gt; \n    group_by(city) |&gt; \n    summarize(avg_price=sum(volume) / sum(sales),\n              num_sales=sum(sales)) |&gt; \n    slice_max(num_sales, n=10) |&gt;\n    ggplot(aes(x=city, y=avg_price)) + \n    geom_bar(stat=\"identity\") + \n    ggtitle(\"Average Price of Houses Sold in 2015 by City in Texas\") + \n    xlab(\"City\") + \n    ylab(\"Average Sale Price\") + \n    scale_y_continuous(labels = scales::dollar)"
+  },
+  {
+    "objectID": "Lab_Inclass_2.html#how-to-ace-school",
+    "href": "Lab_Inclass_2.html#how-to-ace-school",
+    "title": "Lab_Inclass",
+    "section": "How to ace school",
+    "text": "How to ace school\n\n\nListen To Teacher\nWork Hard\nJoke Around."
+  },
+  {
+    "objectID": "Lab_Inclass_2.html#incremental-test-run",
+    "href": "Lab_Inclass_2.html#incremental-test-run",
+    "title": "Lab_Inclass",
+    "section": "Incremental Test Run",
+    "text": "Incremental Test Run\nHello I have a secret\n. . .\nThere is no secret"
+  },
+  {
+    "objectID": "Lab_Inclass_2.html#column-test-run",
+    "href": "Lab_Inclass_2.html#column-test-run",
+    "title": "Lab_Inclass",
+    "section": "Column Test Run",
+    "text": "Column Test Run\n\n\nBest Food of All time\nPizza\n. . .\nBurger\n. . .\nTacos ;&gt;\n\nDrinks\nWater\nSoda\nIce Tea"
+  },
+  {
+    "objectID": "LAB#2.html",
+    "href": "LAB#2.html",
+    "title": "Lab_2",
+    "section": "",
+    "text": "if(!require(\"tidyverse\")) install.packages(\"tidyverse\")\n\nLoading required package: tidyverse\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.4.4     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(tidyverse)\ntxhousing |&gt; \n  filter(city==\"Houston\") |&gt; \n  group_by(year) |&gt; \n  summarize(sales=sum(sales)) |&gt; \n  ggplot(aes(x=year, y=sales)) + \n    geom_line() + \n    ggtitle(\"Annual Houses Sold in Houston, TX\")"
   }
 ]

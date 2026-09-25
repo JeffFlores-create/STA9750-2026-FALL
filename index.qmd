@@ -5,7 +5,11 @@ title: "MINI_PROJECT"
 
 ## About Me
 Hi! My name is **Jeffrey Flores**, a grad student at Baruch pursuing an 
-***M.S. in Statistics***. Recently I graduated with a bachelors in ***Statistics & Quantitative Modeling *** whith a minor in Communication Studies. I'm intertested in leveraging to solve problem  within the sports industry. This website will serve as a portfolio to showcase my course projects in STA9750.
+***M.S. in Statistics***. Recently, I graduated with a bachelors in 
+***Statistics & Quantitative Modeling *** with a minor in Communication Studies.
+I'm intertested in leveraging my skills within the sports industry and hope to 
+one day contribute to a teams' success through data. This website will serve as a
+portfolio to showcase my course projects in STA9750.
 ```{r}
 #| echo: false
 #| message: false
