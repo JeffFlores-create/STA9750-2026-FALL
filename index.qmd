@@ -1,5 +1,5 @@
 ---
-title: "MINI_PROJECT"
+title: "STA9750 Portfolio"
 ---
 
 
