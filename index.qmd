@@ -1,12 +1,6 @@
 ---
 title: "STA9750 Portfolio"
 ---
-## My Projects
-
-### Mini-Project 01: Netflix Viewing Analysis
-
-[View My Netflix Analysis](mp01.html)
-
 ## About Me
 Hi! My name is **Jeffrey Flores**, a grad student at Baruch pursuing an 
 ***M.S. in Statistics***. Recently, I graduated with a bachelors in 
