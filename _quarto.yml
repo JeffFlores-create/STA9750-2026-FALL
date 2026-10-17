@@ -8,14 +8,14 @@ website:
     Course Projects for STA 9750 at Baruch College
   site-url: "https://JeffFlores-create.github.io/STA9750-2026-FALL/"
   navbar:
-   background: dark
+    background: dark
     search: false
     left:
       - text: "HOME"
         href: index.qmd
       - text: "MINI-PROJECTS"
         menu:
-          - text: "Mini-Project #01"
+          - text: "Mini-Project #01: Netflix"
             href: mp01.qmd
 format:
   html:
