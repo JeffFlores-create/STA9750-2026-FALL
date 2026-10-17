@@ -11,7 +11,7 @@ toc-title: "On This Page"
 ---
 <div style="text-align: center; margin: 25px 0;">
   <img
-    src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+    src="Netflix_2015_logo.svg"
     alt="Netflix Logo"
     style="width: 280px; max-width: 100%;"
   >
