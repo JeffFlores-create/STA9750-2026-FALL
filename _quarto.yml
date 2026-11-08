@@ -17,6 +17,12 @@ website:
         menu:
           - text: "Mini-Project #01: Netflix"
             href: mp01.qmd
+          - text: "Mini-Project #02: GTA "
+            href: mp02.qmd
+          - text: "Mini-Project #03"
+            href: mp03.qmd
+          - text: "Mini-Project #04"
+            href: mp04.qmd
 format:
   html:
     theme: solar
